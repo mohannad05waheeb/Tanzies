@@ -1,0 +1,44 @@
+.range {
+    width: 60px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}  
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;     
+    position: absolute;
+    top: 3px;
+    background:linear-gradient(270deg, rgb(34, 51, 88), rgb(24, 37, 64));
+    transition: background 0.3s ease;
+}
+.parent {
+    display: flex; 
+    gap: 10px;   
+} 
+@media (max-width: 767px) {
+   .parent {
+        display: none !important;
+    }
+    .best {
+        display: none !important;
+    }
+    .heading {
+        justify-content: center;
+    }
+    .nameGame {
+        margin-left: 50px; 
+        margin-top: -10px; 
+        font-size: 50px !important;     
+    }
+    .description {             
+        white-space: nowrap;
+        transform: translateX(-100px);
+        margin-top: 10px;
+        font-size: 13px !important;
+    }  
+} 
+ 
